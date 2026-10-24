@@ -398,7 +398,7 @@ async function handleGenerateDraft() {
     setReply(generatedDraft);
     setSuccess("AI draft generated. Review it before sending.");
   } catch (err) {
-    console.error("AI draft generation failed:", err);
+    
 
     setError(
       getErrorMessage(err, "Unable to generate an AI draft.")
