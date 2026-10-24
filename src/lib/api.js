@@ -16,7 +16,6 @@ export function getErrorMessage(
 ) {
   
   if (axios.isAxiosError(error)) {
-    console.log("the error in apis: ", error)
     if (error.response?.data?.message) {
       return error.response.data.message;
     }
